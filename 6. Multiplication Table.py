@@ -23,7 +23,5 @@ while True:
 
     print("\n")
 
-    # we need to add +1 to maxNumber because we skip i=0
-    for i in range(maxNumber + 1):
-        if not i == 0:
-            print( getLine(i, maxNumber) )
+    for i in range(1, maxNumber + 1):
+        print( getLine(i, maxNumber) )
