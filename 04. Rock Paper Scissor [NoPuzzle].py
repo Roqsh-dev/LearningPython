@@ -41,7 +41,7 @@ def getWinType(playerG, botG):
 
 while True:
 
-    playerGesture = input("\nRock - Paper - Scissor: ")
+    playerGesture = input("\nRock - Paper - Scissor: ").capitalize()
     botGesture = Gestures[random.randint(0, 2)]
 
     print(f"\nYou chose: {playerGesture}")
