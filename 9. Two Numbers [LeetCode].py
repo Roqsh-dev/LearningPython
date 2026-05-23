@@ -8,12 +8,8 @@ def getIndices(nums, target):
 
     for i in range(len(nums)):
         rest = target - int(nums[i])
-
-        if rest == 0:
-            indices.append(i)
-            return indices
         
-        elif rest in prevNums:
+        if rest in prevNums:
             indices.append( prevNums[rest] )
             indices.append(i)
             return indices
