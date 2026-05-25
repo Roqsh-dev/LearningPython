@@ -28,6 +28,14 @@ Constraints:
 
 '''
 
+def reverseList(l):
+    reversedList = []
+
+    for i in range((len(l) - 1), -1, -1):
+        reversedList.append(l[i])
+
+    return reversedList
+
 def reverseNum(num):
     reversedNumList = []
     sNum = str(num)
@@ -67,8 +75,11 @@ while True:
     list1 = convertToIntList( input("Enter your first list: ").split() )
     list2 = convertToIntList( input("Enter your second list: ").split() )
 
-    list1.reverse()
-    list2.reverse()
+    #list1.reverse()
+    #list2.reverse()
+
+    list1 = reverseList(list1)
+    list2 = reverseList(list2)
 
     solution = reverseNum(addIntLists(list1, list2))
     print(f"The solution is {solution}!\n")
